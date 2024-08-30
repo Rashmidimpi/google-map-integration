@@ -1,0 +1,29 @@
+{
+    "type": "Topology",
+    "objects": {
+      "states": {
+        "type": "GeometryCollection",
+        "geometries": [
+          {
+            "type": "Polygon",
+            "arcs": [[0]],
+            "properties": { "name": "California" }
+          },
+          {
+            "type": "Polygon",
+            "arcs": [[1]],
+            "properties": { "name": "Texas" }
+          }
+        ]
+      }
+    },
+    "arcs": [
+      [[-118.409, 33.663], [-118.409, 32.534], [-114.131, 32.534], [-114.131, 33.663], [-118.409, 33.663]],
+      [[-106.645, 31.331], [-106.645, 29.424], [-100.000, 29.424], [-100.000, 31.331], [-106.645, 31.331]]
+    ],
+    "transform": {
+      "scale": [0.01, 0.01],
+      "translate": [-120, 20]
+    }
+  }
+  

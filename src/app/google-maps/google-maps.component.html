@@ -1,0 +1,70 @@
+<h1>Google Maps in Angular 17 [npm i &#64;angular/google-maps]
+</h1>
+<!-- <google-map height="600px" width="800px" [options]="options"> </google-map> -->
+
+
+<!-- <google-map
+  height="600px"
+  width="800px"
+  [options]="mapOptions">
+  
+  <map-marker
+    *ngFor="let marker of markers"
+    [position]="marker.position"
+    [label]="marker.label"
+    (mapClick)="onMarkerClick(marker.label)">
+  </map-marker>
+  
+</google-map>
+
+<ng-container *ngIf="selectedState">
+  <div class="tooltip">{{ selectedState }}</div>
+</ng-container> -->
+
+<!-- <google-map
+  height="600px"
+  width="800px"
+  [options]="mapOptions">
+   -->
+  <!-- Render each marker on the map -->
+  <!-- <map-marker
+    *ngFor="let marker of markers"
+    [position]="marker.position"
+    (mapClick)="onMarkerClick(marker)">
+  </map-marker>
+  
+</google-map> -->
+
+<!-- Tooltip that shows up on marker click -->
+<!-- <div class="tooltip" *ngIf="selectedState" [style.top]="tooltipPosition.y + 'px'" [style.left]="tooltipPosition.x + 'px'">
+  {{ selectedState }}
+</div> -->
+
+<google-map
+  height="600px"
+  width="800px"
+  [options]="mapOptions"
+>
+  <map-marker
+    *ngFor="let marker of markers"
+    [position]="marker.position"
+    (mapClick)="onMarkerClick(marker)"
+  >
+  </map-marker>
+</google-map>
+
+<ng-container *ngIf="selectedStateInfo">
+  <div
+    class="tooltip"
+    [ngStyle]="{
+      top: tooltipPosition.y + 'px',
+      left: tooltipPosition.x + 'px'
+    }"
+  >
+    {{ selectedStateInfo }}
+  </div>
+</ng-container>
+
+
+
+
